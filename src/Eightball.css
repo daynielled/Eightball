@@ -1,4 +1,17 @@
+body {
+    background-color: rgb(139, 146, 176);
+}
 .eight-ball-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.eight-ball {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -6,13 +19,22 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .eight-ball-text {
     color: white;
     text-align: center;
+}
+
+.reset-button {
+    margin-top: 20px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.record-keeping {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
 }
